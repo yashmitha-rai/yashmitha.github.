@@ -2,7 +2,7 @@ root {
   --primary-color: #d81b60; /* rose */
   --secondary-color: #f8bbd0; /* light rose */
   --text-color: #333;
-  --white: #ffffff;
+  --yellow: #ffffff;
   --gray-bg: #fafafa;
 }
 
@@ -52,7 +52,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: var(--white);
+  color: var(--blue);
 }
 
 .hero h1 {
