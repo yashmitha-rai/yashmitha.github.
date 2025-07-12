@@ -53,7 +53,7 @@ header {
 }
 
 .hero {
-  background: url("https://source.unsplash.com/1600x900/?hostel,bed") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://source.unsplash.com/1600x900/?hostel,bed") center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -62,10 +62,12 @@ header {
   color: var(--white);
 }
 
+
 .hero h1 {
   font-size: 3rem;
   letter-spacing: 1px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 3px 6px rgba(0,0,0,0.6); 
+  color: #ffffff;
 }
 
 .section {
