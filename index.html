@@ -3,35 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose Haven Girls' Hostel | Home</title>
+  <title>Rose Haven Girls' Hostel</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-o/dfJ/VF5/5DxwUPzPKOeKvt/BC6ZPzQG+ZtYs9LaIw+oFGTCblV6s642b8ZfCvRhZyC2+F3rGpaUy2BOaM7Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <nav class="navbar">
       <h2>Rose Haven Girls' Hostel</h2>
       <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="facilities.html">Facilities</a>
-        <a href="rooms.html">Rooms</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <h1>Safe, Comfortable &amp; Homely</h1>
   </section>
 
-  <section class="section" id="welcome">
-    <h2 class="section-title">Welcome to Rose Haven</h2>
-    <p>Located in the heart of the city, Rose Haven Girls' Hostel offers a secure and nurturing environment for students and working professionals. Our mission is to provide more than just accommodation—we strive to create a community where young women feel at home.</p>
+  <section class="section" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Founded in 2010, Rose Haven Girls' Hostel was born out of the need for safe and reliable accommodation for women in the city. Managed by a dedicated team of female staff, security personnel, and caretakers, our hostel upholds the highest standards of hygiene, safety, and hospitality.</p>
+    <h3>Our Vision</h3>
+    <p>To create a supportive space where women can thrive academically, professionally, and personally.</p>
+    <h3>Why Choose Us?</h3>
+    <ul>
+      <li>24/7 CCTV &amp; security guards</li>
+      <li>Nutritious meals prepared by in-house chefs</li>
+      <li>Modern, well-furnished rooms</li>
+      <li>Inclusive and respectful community</li>
+    </ul>
+  </section>
+
+  <section class="section" id="facilities">
+    <h2 class="section-title">Our Facilities</h2>
+    <div class="facilities-grid">
+      <div class="card">
+        <i class="fa-solid fa-bed"></i>
+        <h4>Furnished Rooms</h4>
+        <p>Spacious rooms equipped with comfortable beds, study desks, and wardrobes.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-wifi"></i>
+        <h4>High-Speed Wi‑Fi</h4>
+        <p>Stay connected 24/7 with our unlimited fiber internet.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-utensils"></i>
+        <h4>Healthy Mess</h4>
+        <p>Mouth‑watering, balanced meals prepared thrice a day.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-shirt"></i>
+        <h4>Laundry Service</h4>
+        <p>On‑site washing machines and paid laundry service available.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>24×7 Security</h4>
+        <p>Round‑the‑clock security guards and CCTV monitoring.</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-dumbbell"></i>
+        <h4>Fitness Zone</h4>
+        <p>Mini‑gym with essential equipment to keep you fit and active.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rooms">
+    <h2 class="section-title">Rooms & Pricing</h2>
+    <table class="rooms-table">
+      <thead>
+        <tr>
+          <th>Room Type</th>
+          <th>Bed Count</th>
+          <th>Monthly Rent (₹)</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Single Deluxe</td>
+          <td>1</td>
+          <td>12,500</td>
+          <td>Few Left</td>
+        </tr>
+        <tr>
+          <td>Twin Sharing</td>
+          <td>2</td>
+          <td>8,000</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>Triple Sharing</td>
+          <td>3</td>
+          <td>6,500</td>
+          <td>Waitlist</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <form action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.'); this.reset();">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Rose Haven Girls' Hostel</p>
+    <p>&copy; 2025 Rose Haven Girls' Hostel | +91‑98765‑43210 | 123 City Centre Road</p>
   </footer>
 </body>
 </html>
